@@ -1,8 +1,2 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
-a {
-  color: #00B7FF;
-}
+.regbox{width: 300px; margin:0 auto;}
+.regbox .form-control{margin-bottom: 20px;}

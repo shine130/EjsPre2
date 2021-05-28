@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><%-title%></title>
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css">
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+  <div class="container" id="container">
+    <div class="regbox">
+
+      <% if(locals.success){ %>
+        <div id="alt_sucess" class="alert alert_success">
+          <%- success%>
+        </div>
+      <%}%>
+      <%if(locals.error){%>
+        <div id="alt_sucess" class="alert alert_success">
+          <%- error%>
+        </div>
+      <%}%>
+
+<form class="form-signin" role="form" method="post">
+      <h2 class="form-signin-heading">注册</h2>
+      <input id="txtUserName" name="txtUserName" type="text" class="form-control" placeholder="用户名" required autofocus>
+      <input id="txtUserPwd" name="txtUserPwd" type="password" class="form-control" placeholder="密码" required>
+      <input id="txtUserRePwd" name="txtUserRePwd" type="password" class="form-control" placeholder="重复密码" required>
+      <button id="btnSub" class="btn btn-lg btn-primary" type="submit">注册</button>
+      <a href="/login" class="btn btn-link" role="button">登录</a>
+    </form>
+    </div>
+  </div>
+</body>
+</html>

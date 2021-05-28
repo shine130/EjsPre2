@@ -9,6 +9,7 @@ var subform = require('./routes/subform');
 var usesession = require("./routes/usesession");
 var usecookies = require("./routes/usecookies");
 var usecrypto = require("./routes/usecrypto");
+var reg = require("./routes/reg");
 var session = require('express-session');
 
 
@@ -37,6 +38,7 @@ app.use("/subform", subform);
 app.use("/usesession", usesession);
 app.use("/usecookies", usecookies);
 app.use("/usecrypto", usecrypto);
+app.use("/reg", reg);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
