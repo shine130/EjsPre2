@@ -11,6 +11,7 @@ var usecookies = require("./routes/usecookies");
 var usecrypto = require("./routes/usecrypto");
 var reg = require("./routes/reg");
 var loginRouter = require("./routes/login");
+var logoutRouter = require("./routes/logout");
 var session = require('express-session');
 
 
@@ -35,12 +36,14 @@ app.use(session({
 }))
 
 app.use('/', indexRouter);
+app.use('/index', indexRouter);
 app.use("/subform", subform);
 app.use("/usesession", usesession);
 app.use("/usecookies", usecookies);
 app.use("/usecrypto", usecrypto);
 app.use("/reg", reg);
 app.use("/login",loginRouter);
+app.use("/logout", logoutRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

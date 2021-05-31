@@ -1,2 +1,4 @@
 .regbox{width: 300px; margin:0 auto;}
 .regbox .form-control{margin-bottom: 20px;}
+.navbox{padding-top: 50px; padding-bottom: 20px; border-bottom: 1px solid #000; margin-bottom: 30px;}
+.navbox a{padding:10px 20px;}
