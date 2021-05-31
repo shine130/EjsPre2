@@ -8,5 +8,12 @@
   <body>
 <%include nav%>
 
+<div>新闻列表</div>
+  <ul class="newslist">
+    <% newslists.forEach(function(item){ %>
+          <li><%- item.Id%>: <%- item.newtitle%></li>
+    <% }) %>
+
+  </ul>
   </body>
 </html>
