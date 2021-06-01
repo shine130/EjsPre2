@@ -12,6 +12,7 @@ var usecrypto = require("./routes/usecrypto");
 var reg = require("./routes/reg");
 var loginRouter = require("./routes/login");
 var logoutRouter = require("./routes/logout");
+var uploadRouter = require("./routes/upload");
 var session = require('express-session');
 
 
@@ -44,6 +45,7 @@ app.use("/usecrypto", usecrypto);
 app.use("/reg", reg);
 app.use("/login",loginRouter);
 app.use("/logout", logoutRouter);
+app.use("/upload", uploadRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
